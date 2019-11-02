@@ -1,0 +1,79 @@
+html {
+    height: 100%;
+    margin: 0;
+    > body {
+        height: 100%;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        background: coral;
+    }
+}
+.site-header {
+    display: block;
+    background: royalblue;
+    > .search-bar {
+        background: pink;
+        display: inline;
+        margin: 10px;
+        > input {
+            width: 60%;
+        }
+        > a {
+            display: inline;
+        }
+    }
+    > .logo {
+        display: inline;
+    }
+    > nav {
+        background: pink;
+        align-content: center;
+        display: block;
+        > ul {
+            list-style: none;
+            text-align: center;
+            > li {
+                margin: 0px 20px;
+                display: inline-block;
+            }
+        }
+    }
+    > aside {
+        width: 100px;
+        float: right;
+        > button {
+            margin: 20px;
+            display: block;
+        }
+    }
+}
+.site-main {
+    background: blue;
+    > .product-summary {
+        background: gray;
+        width: 200px;
+        height: 400px;
+        display: block;
+        > .product-image {
+            background: plum;
+            height: 300px;
+            margin: 20px;
+            text-align: center;
+            display: block;
+        }
+        > h5 {
+            position: absolute;
+            display: block;
+        }
+        > span {
+            position: relative;
+            display: block;
+        }
+    }
+}
+.site-footer {
+    background: brown;
+    height: 100px;
+    margin-top: auto;
+}

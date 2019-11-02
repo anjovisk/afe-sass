@@ -1,0 +1,84 @@
+html {
+  height: 100%;
+  margin: 0;
+}
+html > body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  background: coral;
+}
+
+.site-header {
+  display: block;
+  background: royalblue;
+}
+.site-header > .search-bar {
+  background: pink;
+  display: inline;
+  margin: 10px;
+}
+.site-header > .search-bar > input {
+  width: 60%;
+}
+.site-header > .search-bar > a {
+  display: inline;
+}
+.site-header > .logo {
+  display: inline;
+}
+.site-header > nav {
+  background: pink;
+  align-content: center;
+  display: block;
+}
+.site-header > nav > ul {
+  list-style: none;
+  text-align: center;
+}
+.site-header > nav > ul > li {
+  margin: 0px 20px;
+  display: inline-block;
+}
+.site-header > aside {
+  width: 100px;
+  float: right;
+}
+.site-header > aside > button {
+  margin: 20px;
+  display: block;
+}
+
+.site-main {
+  background: blue;
+}
+.site-main > .product-summary {
+  background: gray;
+  width: 200px;
+  height: 400px;
+  display: block;
+}
+.site-main > .product-summary > .product-image {
+  background: plum;
+  height: 300px;
+  margin: 20px;
+  text-align: center;
+  display: block;
+}
+.site-main > .product-summary > h5 {
+  position: absolute;
+  display: block;
+}
+.site-main > .product-summary > span {
+  position: relative;
+  display: block;
+}
+
+.site-footer {
+  background: brown;
+  height: 100px;
+  margin-top: auto;
+}
+
+/*# sourceMappingURL=main.css.map */
