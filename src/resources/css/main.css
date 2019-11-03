@@ -14,54 +14,54 @@ html > body {
   display: block;
   background: royalblue;
 }
-.site-header > .search-bar {
+.site-header__search-bar {
   background: pink;
   display: inline;
   margin: 10px;
 }
-.site-header > .search-bar > input {
+.site-header__search-bar > input {
   width: 60%;
 }
-.site-header > .search-bar > a {
+.site-header__search-bar > a {
   display: inline;
 }
-.site-header > .logo {
+.site-header__logo {
   display: inline;
 }
-.site-header > nav {
+.site-header__menu {
   background: pink;
   align-content: center;
   display: block;
 }
-.site-header > nav > ul {
+.site-header__menu > ul {
   list-style: none;
   text-align: center;
 }
-.site-header > nav > ul > li {
+.site-header__menu > ul > li {
   margin: 0px 20px;
   display: inline-block;
 }
-.site-header > aside {
+.site-header__sidebox {
   width: 100px;
   float: right;
 }
-.site-header > aside > button {
+.site-header__sidebox > button {
   margin: 20px;
   display: block;
 }
 
-.site-main > .products {
+.site-main__articlebox__product__summary-box {
   background: blue;
 }
-.site-main > .products > ul {
+.site-main__articlebox__product__summary-box__ul {
   list-style: none;
   text-align: center;
 }
-.site-main > .products > ul > li {
+.site-main__articlebox__product__summary-box__ul__li {
   margin: 0px 20px;
   display: inline-block;
 }
-.site-main > .products > ul > li > .product-summary {
+.site-main__articlebox__product__summary-box__ul__li__summary {
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -70,7 +70,7 @@ html > body {
   width: 200px;
   height: 400px;
 }
-.site-main > .products > ul > li > .product-summary > .product-image {
+.site-main__articlebox__product__summary-box__ul__li__summary__image {
   background: rebeccapurple;
   margin-left: auto;
   margin-right: auto;
@@ -79,7 +79,7 @@ html > body {
   height: 300px;
   position: relative;
 }
-.site-main > .products > ul > li > .product-summary > .product-image > img {
+.site-main__articlebox__product__summary-box__ul__li__summary__image > img {
   max-height: 100%;
   max-width: 100%;
   width: auto;
@@ -91,17 +91,17 @@ html > body {
   right: 0;
   margin: auto;
 }
-.site-main > .products > ul > li > .product-summary > h5 {
+.site-main__articlebox__product__summary-box__ul__li__summary > h5 {
   margin-bottom: 10px;
 }
-.site-main > .products > ul > li > .product-summary > span {
+.site-main__articlebox__product__summary-box__ul__li__summary > span {
   margin-bottom: 10px;
 }
-.site-main > .product-details {
+.site-main__articlebox__product__details {
   background: paleturquoise;
   height: 400px;
 }
-.site-main > .product-details > .product-image {
+.site-main__articlebox__product__details__image {
   float: left;
   background: rebeccapurple;
   margin-left: 10px;
@@ -110,7 +110,7 @@ html > body {
   height: 400px;
   position: relative;
 }
-.site-main > .product-details > .product-image > img {
+.site-main__articlebox__product__details__image > img {
   max-height: 100%;
   max-width: 100%;
   width: auto;
@@ -122,24 +122,24 @@ html > body {
   right: 0;
   margin: auto;
 }
-.site-main > .product-details > .product-parameters {
+.site-main__articlebox__product__details__parameters {
   float: left;
   max-width: 400px;
 }
-.site-main > .product-details > .product-parameters > .product-description {
+.site-main__articlebox__product__details__parameters__description {
   background: yellow;
 }
-.site-main > .product-details > .product-parameters > .product-description > p {
+.site-main__articlebox__product__details__parameters__description > p {
   display: inline;
   word-break: break-all;
 }
-.site-main > .product-details > .product-parameters > .product-size {
+.site-main__articlebox__product__details__parameters__size {
   display: block;
 }
-.site-main > .product-details > .product-parameters > .product-count {
+.site-main__articlebox__product__details__parameters__count {
   display: block;
 }
-.site-main > .product-details > .add-to-cart {
+.site-main__articlebox__product__details__add-to-cart {
   float: right;
   background: rebeccapurple;
   margin-left: 20px;
@@ -148,8 +148,7 @@ html > body {
   height: 400px;
   position: relative;
 }
-.site-main > .product-details > .add-to-cart > button {
-  float: inline-end;
+.site-main__articlebox__product__details__add-to-cart > button {
   display: block;
   margin-top: auto;
 }
@@ -158,6 +157,26 @@ html > body {
   background: brown;
   height: 100px;
   margin-top: auto;
+}
+.site-footer__ul {
+  background: pink;
+  list-style: none;
+  text-align: center;
+}
+.site-footer__ul__li {
+  margin: 0px 20px;
+  display: inline-block;
+  background: red;
+  width: 30%;
+}
+.site-footer__ul__li__contact {
+  background: yellowgreen;
+}
+.site-footer__ul__li__payment {
+  background: rebeccapurple;
+}
+.site-footer__ul__li__company {
+  background: powderblue;
 }
 
 /*# sourceMappingURL=main.css.map */

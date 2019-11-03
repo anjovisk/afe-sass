@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
+        <title>Detalhes do produto</title>
         <link href="../resources/css/main.css" rel="stylesheet"/>
     </head>
     <body>
         <header class="site-header">
-            <img class="logo" src="../resources/images/logo.png"/>
-            <div class="search-bar">
-                <input class="search-bar__input"></input>
-                <button class="search-bar__button">Pesquisar</button>
+            <img class="site-header__logo" src="../resources/images/logo.png"/>
+            <div class="site-header__search-bar">
+                <input></input>
+                <button>Pesquisar</button>
             </div>
-            <aside>
+            <aside class="site-header__sidebox">
                 <button>Carrinho</button>
                 <button>Entrar</button>
             </aside>
-            <nav>
+            <nav class="site-header__menu">
                 <ul>
                     <li>
                         <a href="#">Camisas</a>
@@ -32,17 +33,15 @@
             </nav>
         </header>
         <main class="site-main">
-            <article class="product-details">
-                <section class="product-image">
-                    <img src="../resources/images/logo.png"/>
+            <article itemscope itemtype="http://schema.org/Product" class="site-main__articlebox__product__details">
+                <section class="site-main__articlebox__product__details__image">
+                    <img itemprop="image" itemprop="image" src="../resources/images/logo.png"/>
                 </section>
-                <section class="product-parameters">
-                        <h5>Camisa do Cruzeiro</h5>
-                        <div class="product-description">
-                            <p>
-                                djalfjdflajsd f alsdjfak sdlfaj sldfj lajds flajsdf fjasldjf a lsdjfl ajsd lfajsdlkf aljs dfsdj fa sd fjalsk ljdlsajflajsldfj asldjf lajsldfj lasd jflj
-                                djalfjdflajsd f alsdjfak sdlfaj sldfj lajds flajsdf fjasldjf a lsdjfl ajsd lfajsdlkf aljs dfsdj fa sd fjalsk ljdlsajflajsldfj asldjf lajsldfj lasd jflj
-                                djalfjdflajsd f alsdjfak sdlfaj sldfj lajds flajsdf fjasldjf a lsdjfl ajsd lfajsdlkf aljs dfsdj fa sd fjalsk ljdlsajflajsldfj asldjf lajsldfj lasd jflj
+                <section class="site-main__articlebox__product__details__parameters">
+                        <h5 itemprop="name">Camisa do Cruzeiro</h5>
+                        <div class="site-main__articlebox__product__details__parameters__description">
+                            <p itemprop="description">
+                                djalfjdflajsd f alsdjfak sdlfaj sldfj lajds flajsdf fjasldjf a lsdjfl ajsd lfajsdlkf aljs dfsdj fa sd fjalsk ljdlsajflajsldfj asldjf lajsldfj lasd jflj djalfjdflajsd f alsdjfak sdlfaj sldfj lajds flajsdf fjasldjf a lsdjfl ajsd lfajsdlkf aljs dfsdj fa sd fjalsk ljdlsajflajsldfj asldjf lajsldfj lasd jflj djalfjdflajsd f alsdjfak sdlfaj sldfj lajds flajsdf fjasldjf a lsdjfl ajsd lfajsdlkf aljs dfsdj fa sd fjalsk ljdlsajflajsldfj asldjf lajsldfj lasd jflj
                             </p>
                         </div>
                         <span>Tamanho:</span>
@@ -51,19 +50,53 @@
                         <input type="radio" name="product-size" value="other"> M
                         <input type="radio" name="product-size" value="other"> L
                         <input type="radio" name="product-size" value="other"> XL
-                        <div class="product-count">
+                        <div class="site-main__articlebox__product__details__parameters__count">
                             <label for="quantidade">Quantidade:</label>
                             <input id="quantidade" value="1" type="number"/>
                         </div>
                 </section>
-                <section class="add-to-cart">
-                    <span class="preco">R$199,90</span>
+                <section itemscope itemprop="offers" itemtype="http://schema.org/Offer" class="site-main__articlebox__product__details__add-to-cart">
+                    <meta itemprop="priceCurrency" content="R$" />
+                    <span itemprop="price" class="preco">R$199,90</span>
                     <button>Comprar</button>
                 </section>
             </article>
         </main>
         <footer class="site-footer">
-
+            <ul class="site-footer__ul">
+                <li class="site-footer__ul__li">
+                    <section itemscope itemtype="http://schema.org/ContactPoint" class="site-footer__ul__li__contact">
+                        <header>
+                            Contato
+                        </header>
+                        <span itemprop="email">contato@emprasa.com</span>
+                        <span itemprop="telephone">(31) 3275-9999</span>
+                    </section>
+                </li>
+                <li class="site-footer__ul__li">
+                    <section itemscope itemtype="http://schema.org/Offer" class="site-footer__ul__li__payment">
+                        <meta itemprop="acceptedPaymentMethod" content="http://purl.org/goodrelations/v1#DirectDebit"/>
+                        <meta itemprop="acceptedPaymentMethod" content="http://purl.org/goodrelations/v1#PayPal"/>
+                        <header>
+                            Pagamento
+                        </header>
+                        <span>Crédito</span>
+                        <span>Débito</span>
+                        <span>Paypal</span>
+                    </section>
+                </li>
+                <li class="site-footer__ul__li">
+                    <article itemscope itemtype="http://schema.org/Organization" class="site-footer__ul__li__company">
+                        <link itemprop="logo" href="../resources/images/logo.png"/>
+                        <header itemprop="name">
+                            Empresa
+                        </header>
+                        <p itemprop="description">
+                            Sobre a empresa djalkjsdf alsdjf alsj alsddjf lajsd  lasjdf lajsd  alsdjfajsd aljdfla sdj aldjfa jsd l aldjf lajsd 
+                        </p>
+                    </article>
+                </li>
+            </ul>
         </footer>
     </body>
 </html>

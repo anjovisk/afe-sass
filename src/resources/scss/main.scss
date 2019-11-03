@@ -12,7 +12,7 @@ html {
 .site-header {
     display: block;
     background: royalblue;
-    > .search-bar {
+    &__search-bar {
         background: pink;
         display: inline;
         margin: 10px;
@@ -23,10 +23,10 @@ html {
             display: inline;
         }
     }
-    > .logo {
+    &__logo {
         display: inline;
     }
-    > nav {
+    &__menu {
         background: pink;
         align-content: center;
         display: block;
@@ -39,7 +39,7 @@ html {
             }
         }
     }
-    > aside {
+    &__sidebox {
         width: 100px;
         float: right;
         > button {
@@ -49,105 +49,109 @@ html {
     }
 }
 .site-main {
-    > .products {
-        background: blue;
-        > ul {
-            list-style: none;
-            text-align: center;
-            > li {
-                margin: 0px 20px;
-                display: inline-block;
-                > .product-summary {
-                    margin: 0;
-                    display: flex;
-                    flex-direction: column;
-                    background: gray;
-                    min-width: 300px;
-                    width: 200px;
-                    height: 400px;
-                    > .product-image {
-                        background: rebeccapurple;
-                        margin-left: auto;
-                        margin-right: auto;
-                        margin-top: 10px;
-                        width: 180px;
-                        height: 300px;
-                        position: relative;
-                        > img {
-                            max-height: 100%;
-                            max-width: 100%;
-                            width: auto;
-                            height: auto;
-                            position: absolute;
-                            top: 0;
-                            bottom: 0;
-                            left: 0;
-                            right: 0;
-                            margin: auto;
+    &__articlebox {
+        &__product {
+            &__summary-box {
+                background: blue;
+                &__ul {
+                    list-style: none;
+                    text-align: center;
+                    &__li {
+                        margin: 0px 20px;
+                        display: inline-block;
+                        &__summary {
+                            margin: 0;
+                            display: flex;
+                            flex-direction: column;
+                            background: gray;
+                            min-width: 300px;
+                            width: 200px;
+                            height: 400px;
+                            &__image {
+                                background: rebeccapurple;
+                                margin-left: auto;
+                                margin-right: auto;
+                                margin-top: 10px;
+                                width: 180px;
+                                height: 300px;
+                                position: relative;
+                                > img {
+                                    max-height: 100%;
+                                    max-width: 100%;
+                                    width: auto;
+                                    height: auto;
+                                    position: absolute;
+                                    top: 0;
+                                    bottom: 0;
+                                    left: 0;
+                                    right: 0;
+                                    margin: auto;
+                                }
+                            }
+                            > h5 {
+                                margin-bottom: 10px;
+                            }
+                            > span {
+                                margin-bottom: 10px;
+                            }
                         }
                     }
-                    > h5 {
-                        margin-bottom: 10px;
-                    }
-                    > span {
-                        margin-bottom: 10px;
-                    }
                 }
             }
-        }
-    }
-    > .product-details {
-        background: paleturquoise;
-        height: 400px;
-        > .product-image {
-            float: left;
-            background: rebeccapurple;
-            margin-left: 10px;
-            margin-right: 20px;
-            width: 200px;
-            height: 400px;
-            position: relative;
-            > img {
-                max-height: 100%;
-                max-width: 100%;
-                width: auto;
-                height: auto;
-                position: absolute;
-                top: 0;
-                bottom: 0;
-                left: 0;
-                right: 0;
-                margin: auto;
-            }
-        }
-        > .product-parameters {
-            float: left;
-            max-width: 400px;
-            > .product-description {
-                background: yellow;
-                > p {
-                    display: inline;
-                    word-break: break-all;
+            &__details {
+                background: paleturquoise;
+                height: 400px;
+                &__image {
+                    float: left;
+                    background: rebeccapurple;
+                    margin-left: 10px;
+                    margin-right: 20px;
+                    width: 200px;
+                    height: 400px;
+                    position: relative;
+                    > img {
+                        max-height: 100%;
+                        max-width: 100%;
+                        width: auto;
+                        height: auto;
+                        position: absolute;
+                        top: 0;
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                        margin: auto;
+                    }
                 }
-            }
-            > .product-size {
-                display: block;
-            }
-            > .product-count {
-                display: block;
-            }
-        }
-        > .add-to-cart {
-            float: right;
-            background: rebeccapurple;
-            margin-left: 20px;
-            margin-right: 10px;
-            width: 150px;
-            height: 400px;
-            position: relative;
-            > button {
-                display: block;
-                margin-top: auto;
+                &__parameters {
+                    float: left;
+                    max-width: 400px;
+                    &__description {
+                        background: yellow;
+                        > p {
+                            display: inline;
+                            word-break: break-all;
+                        }
+                    }
+                    &__size {
+                        display: block;
+                    }
+                    &__count {
+                        display: block;
+                    }
+                }
+                &__add-to-cart {
+                    float: right;
+                    background: rebeccapurple;
+                    margin-left: 20px;
+                    margin-right: 10px;
+                    width: 150px;
+                    height: 400px;
+                    position: relative;
+                    > button {
+                        display: block;
+                        margin-top: auto;
+                    }
+                }
             }
         }
     }
@@ -156,4 +160,24 @@ html {
     background: brown;
     height: 100px;
     margin-top: auto;
+    &__ul{
+        background: pink;
+        list-style: none;
+        text-align: center;
+        &__li{
+            margin: 0px 20px;
+            display: inline-block;
+            background: red;
+            width: 30%;
+            &__contact {
+                background: yellowgreen;
+            }
+            &__payment{
+                background: rebeccapurple;
+            }
+            &__company{
+                background: powderblue;
+            }
+        }
+    }
 }
