@@ -50,29 +50,108 @@ html > body {
   display: block;
 }
 
-.site-main {
+.site-main > .products {
   background: blue;
 }
-.site-main > .product-summary {
+.site-main > .products > ul {
+  list-style: none;
+  text-align: center;
+}
+.site-main > .products > ul > li {
+  margin: 0px 20px;
+  display: inline-block;
+}
+.site-main > .products > ul > li > .product-summary {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
   background: gray;
+  min-width: 300px;
   width: 200px;
   height: 400px;
-  display: block;
 }
-.site-main > .product-summary > .product-image {
-  background: plum;
+.site-main > .products > ul > li > .product-summary > .product-image {
+  background: rebeccapurple;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  width: 180px;
   height: 300px;
-  margin: 20px;
-  text-align: center;
-  display: block;
-}
-.site-main > .product-summary > h5 {
-  position: absolute;
-  display: block;
-}
-.site-main > .product-summary > span {
   position: relative;
+}
+.site-main > .products > ul > li > .product-summary > .product-image > img {
+  max-height: 100%;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.site-main > .products > ul > li > .product-summary > h5 {
+  margin-bottom: 10px;
+}
+.site-main > .products > ul > li > .product-summary > span {
+  margin-bottom: 10px;
+}
+.site-main > .product-details {
+  background: paleturquoise;
+  height: 400px;
+}
+.site-main > .product-details > .product-image {
+  float: left;
+  background: rebeccapurple;
+  margin-left: 10px;
+  margin-right: 20px;
+  width: 200px;
+  height: 400px;
+  position: relative;
+}
+.site-main > .product-details > .product-image > img {
+  max-height: 100%;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.site-main > .product-details > .product-parameters {
+  float: left;
+  max-width: 400px;
+}
+.site-main > .product-details > .product-parameters > .product-description {
+  background: yellow;
+}
+.site-main > .product-details > .product-parameters > .product-description > p {
+  display: inline;
+  word-break: break-all;
+}
+.site-main > .product-details > .product-parameters > .product-size {
   display: block;
+}
+.site-main > .product-details > .product-parameters > .product-count {
+  display: block;
+}
+.site-main > .product-details > .add-to-cart {
+  float: right;
+  background: rebeccapurple;
+  margin-left: 20px;
+  margin-right: 10px;
+  width: 150px;
+  height: 400px;
+  position: relative;
+}
+.site-main > .product-details > .add-to-cart > button {
+  float: inline-end;
+  display: block;
+  margin-top: auto;
 }
 
 .site-footer {
